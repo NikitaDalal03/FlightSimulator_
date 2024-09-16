@@ -1,0 +1,1150 @@
+{
+    "name": "SilantroControl",
+    "maps": [
+        {
+            "name": "Aircraft",
+            "id": "f7eae91c-ce92-46e9-a065-56bfc5c30a76",
+            "actions": [
+                {
+                    "name": "Start Engine Global",
+                    "type": "Button",
+                    "id": "5fe76839-c02d-4ec5-aa80-5344403d6e62",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Stop Engine Global",
+                    "type": "Button",
+                    "id": "fc7a921c-66d8-4eb7-8d26-9e4c4dba80f7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Left Engine Switch",
+                    "type": "Button",
+                    "id": "41c58e4f-9a4c-4fb6-bbce-72661a332fb8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right Engine Switch",
+                    "type": "Button",
+                    "id": "f425fa6e-721e-49c4-9187-bb87292c83a9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Boost Switch",
+                    "type": "Button",
+                    "id": "9b6cf066-4299-4c05-b077-07358ad22041",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Flap Down Switch",
+                    "type": "Button",
+                    "id": "401f7ce4-a6cc-4d29-9bb8-730bbd5853af",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Flap Up Switch",
+                    "type": "Button",
+                    "id": "11ac6206-ddba-4e15-b5d3-4f5dbd8eaf31",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Camera Switch",
+                    "type": "Button",
+                    "id": "cfb9af3b-6a15-4294-b03b-9f1e0ef20d0a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Light Switch",
+                    "type": "Button",
+                    "id": "16d8ba7f-2491-4898-bb0b-82071087847c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Gear Actuation",
+                    "type": "Button",
+                    "id": "af5aea25-9ec2-4587-8376-e7ed5305c0cb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Brake Hold",
+                    "type": "Button",
+                    "id": "370c6341-22b0-408e-b4ca-71d980085780",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Parking Brake",
+                    "type": "Button",
+                    "id": "0a1ca183-f8fb-4732-8f29-468a471ca69c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Speed Brake",
+                    "type": "Button",
+                    "id": "3749bd8e-d7f5-4e30-8507-99eac2a9800e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Mouse Delta",
+                    "type": "Value",
+                    "id": "bfd55c1c-f750-4002-a8cc-b42a01d7e263",
+                    "expectedControlType": "Vector2",
+                    "processors": "ScaleVector2(x=0.1,y=0.1)",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Throttle Lever",
+                    "type": "PassThrough",
+                    "id": "0fc76518-d77f-469d-9f04-f1caa8adddd3",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Collective Lever",
+                    "type": "PassThrough",
+                    "id": "9756ccb1-a4fa-4fe2-9046-fafcce0090a4",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Mixture Lever",
+                    "type": "PassThrough",
+                    "id": "e0d7d8f0-c54d-40f5-94f2-87ae20d7bdfe",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Prop Pitch Lever",
+                    "type": "PassThrough",
+                    "id": "4267f388-34f4-45e9-bb29-e64cf9b012f8",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Carb Heat Lever",
+                    "type": "PassThrough",
+                    "id": "997afcf3-d91d-4358-8349-d3e5fd0b3b22",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pitch Input",
+                    "type": "PassThrough",
+                    "id": "92563aa3-98ef-47e9-9c4f-38281edae3af",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1),Invert",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pitch Trim Down",
+                    "type": "Button",
+                    "id": "a5037e59-c819-4c00-a692-b5d80488c637",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pitch Trim Up",
+                    "type": "Button",
+                    "id": "f380e0e0-49c2-42c1-a88e-5d032072017f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Roll Input",
+                    "type": "PassThrough",
+                    "id": "6cade0e6-6e1a-41da-a7d9-e141bae42b4f",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Roll Trim Right",
+                    "type": "Button",
+                    "id": "2760b298-d77d-4f78-8b9e-b3057151f462",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Roll Trim Left",
+                    "type": "Button",
+                    "id": "ad7944f5-1cc7-4b3b-a972-ec55ff426d35",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Yaw Input",
+                    "type": "PassThrough",
+                    "id": "a81b08e6-ab8a-4723-a244-afede7c27954",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Yaw Trim Left",
+                    "type": "Button",
+                    "id": "e561f7b9-e968-41f8-8bdb-114b500cb1f7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Yaw Trim RIght",
+                    "type": "Button",
+                    "id": "63ba2d5d-47f6-40f9-95ed-92eee1b4cded",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Restore Aircraft",
+                    "type": "Button",
+                    "id": "97dd15bd-495c-4433-a3bc-4ba76ba7d8aa",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Reset Scene",
+                    "type": "Button",
+                    "id": "1ba71fda-bbf7-4130-951c-fe386757510a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Fire Hold",
+                    "type": "Button",
+                    "id": "22c59271-c2ec-4cf8-a4fa-7c5827f4a3bb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Fire Press",
+                    "type": "Button",
+                    "id": "da69f4bf-1eb0-4e4d-83d5-4578511221f8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Weapon Switch",
+                    "type": "Button",
+                    "id": "c35fd128-6270-4147-b59f-9e740b7ca3d3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "View Hatswitch",
+                    "type": "Value",
+                    "id": "a10b9c9c-81ca-49d4-9285-96084865b741",
+                    "expectedControlType": "Dpad",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Target Up",
+                    "type": "Button",
+                    "id": "5c5600c0-dfaa-45bc-87d2-a11a76f463bd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Target Down",
+                    "type": "Button",
+                    "id": "c305ab64-5d00-4eb1-8001-c889ac480026",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Target Lock",
+                    "type": "Button",
+                    "id": "414fe1f8-25a7-435e-a05d-00701bc88a70",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Throttle Lever(New)",
+                    "type": "Value",
+                    "id": "b2b2573a-8fbc-4dd7-9064-1a3cb4d2e158",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pitch Lever(New)",
+                    "type": "Button",
+                    "id": "640b5289-aac6-4d80-8aa9-1ac7cf03fa6b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Left Right Turn",
+                    "type": "Button",
+                    "id": "8dd3d942-0151-4cd2-8752-24c81ac591e7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Roll Lever(New)",
+                    "type": "Button",
+                    "id": "cb7f1c4f-02ac-46eb-8396-884cbc3398cd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0d724371-fef9-4637-8469-05d3f4637321",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mouse Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0d1d02cc-19af-4371-96d4-0733f6cce41e",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Parking Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3e06e12b-8232-421b-abb6-7bb7a430e49f",
+                    "path": "<HID::Thrustmaster Throttle - HOTAS Warthog>/button8",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "Warthog Throttle + TA320 Stick;Keyboard",
+                    "action": "Brake Hold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "03d544aa-0d61-4cb1-8620-05e09ed4b0c9",
+                    "path": "<Keyboard>/0",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gear Actuation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d0ea78b1-01bf-45e4-a4ad-d4d45d6e5769",
+                    "path": "<HID::Thrustmaster Throttle - HOTAS Warthog>/button21",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Warthog Throttle + TA320 Stick",
+                    "action": "Gear Actuation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "faf748ae-497d-43b9-be3e-7b0726a9d46b",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard;Warthog Throttle + TA320 Stick;CHT Flight Yoke;Thrustmaster TA320 Only",
+                    "action": "Light Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "854c0502-3d7a-4c23-8ea7-f583db8731f8",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard;CHT Flight Yoke;Warthog Throttle + TA320 Stick;Thrustmaster TA320 Only",
+                    "action": "Camera Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "95a37729-05d5-4c10-b789-c175394b6b6a",
+                    "path": "<Keyboard>/f2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Stop Engine Global",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c22c896f-0269-4833-a941-a1592be1afeb",
+                    "path": "<Keyboard>/f1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Start Engine Global",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bdca0300-6d6a-4f79-a697-9e2c180f2ac0",
+                    "path": "<HID::Thrustmaster Throttle - HOTAS Warthog>/button19",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "Warthog Throttle + TA320 Stick",
+                    "action": "Right Engine Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bdc13c74-a16f-4cb9-870b-3e6337c3a35a",
+                    "path": "<HID::Thrustmaster Throttle - HOTAS Warthog>/button18",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "Warthog Throttle + TA320 Stick",
+                    "action": "Left Engine Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7935b017-0b04-4462-a39e-1765602a7d94",
+                    "path": "<HID::Thrustmaster T.A320 Pilot>/slider",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard;Thrustmaster TA320 Only",
+                    "action": "Throttle Lever",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c3cbea56-edbc-46bd-8348-0ba143c9ceb5",
+                    "path": "<HID::Thrustmaster Throttle - HOTAS Warthog>/slider",
+                    "interactions": "",
+                    "processors": "Invert",
+                    "groups": "Warthog Throttle + TA320 Stick",
+                    "action": "Mixture Lever",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "40f8e196-18eb-4ca7-b997-650392e0fe33",
+                    "path": "<HID::CH Products CH FLIGHT SIM YOKE USB>/ry",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CHT Flight Yoke",
+                    "action": "Mixture Lever",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ff50d82f-d338-460c-93ab-d025fe4b9b09",
+                    "path": "<HID::Thrustmaster Throttle - HOTAS Warthog>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Warthog Throttle + TA320 Stick",
+                    "action": "Prop Pitch Lever",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "84b3c97b-ae20-454d-8883-7080d989bd3b",
+                    "path": "<HID::CH Products CH FLIGHT SIM YOKE USB>/rx",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CHT Flight Yoke",
+                    "action": "Prop Pitch Lever",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4977b971-3420-48ac-90bf-fc131aae4bc1",
+                    "path": "<HID::Thrustmaster T.A320 Pilot>/slider",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Warthog Throttle + TA320 Stick",
+                    "action": "Carb Heat Lever",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5f0eca92-f866-4378-a26a-956e65c5337a",
+                    "path": "<HID::Thrustmaster T.A320 Pilot>/rz",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Warthog Throttle + TA320 Stick;Thrustmaster TA320 Only",
+                    "action": "Yaw Input",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d1ab43b0-7591-4837-b00e-9669a82a4866",
+                    "path": "<HID::CH Products CH FLIGHT SIM YOKE USB>/button11",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CHT Flight Yoke",
+                    "action": "Pitch Trim Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9031ea23-691c-4ff0-bd76-fd256ff75314",
+                    "path": "<HID::CH Products CH FLIGHT SIM YOKE USB>/button12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CHT Flight Yoke",
+                    "action": "Pitch Trim Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bc3bbaef-7f49-41ba-8a2a-979257d9d3b5",
+                    "path": "<HID::CH Products CH FLIGHT SIM YOKE USB>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CHT Flight Yoke",
+                    "action": "Roll Trim Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a4a484a6-cf66-40bc-a390-cc4c9b01614b",
+                    "path": "<HID::CH Products CH FLIGHT SIM YOKE USB>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CHT Flight Yoke",
+                    "action": "Roll Trim Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7678d15a-2e87-4e22-ab73-574a8d0296fb",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard;Warthog Throttle + TA320 Stick;CHT Flight Yoke;Thrustmaster TA320 Only",
+                    "action": "Flap Down Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d6c63b30-a71f-4fd6-9ad3-803cacca9ae3",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard;Warthog Throttle + TA320 Stick;CHT Flight Yoke;Thrustmaster TA320 Only",
+                    "action": "Flap Up Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c200f674-91b3-41d9-bcf4-c8940c1edd8d",
+                    "path": "<HID::CH Products CH FLIGHT SIM YOKE USB>/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CHT Flight Yoke",
+                    "action": "Flap Down Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f5f0ae27-29de-4c1b-9caf-d7f0cfc73ffd",
+                    "path": "<HID::CH Products CH FLIGHT SIM YOKE USB>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CHT Flight Yoke",
+                    "action": "Flap Up Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "444bc175-cb13-4697-97c8-ef14a568a1a4",
+                    "path": "<HID::Thrustmaster Throttle - HOTAS Warthog>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Warthog Throttle + TA320 Stick;Thrustmaster TA320 Only",
+                    "action": "Collective Lever",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "088c71e6-0be6-4a66-9981-c4b0c06efa42",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Restore Aircraft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d24e9b3e-9adb-46ed-8507-caafe96dd2bf",
+                    "path": "<Keyboard>/r",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset Scene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d9b737cd-a779-4995-a810-6b5d2294f23e",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Fire Hold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ac44372-e2b6-49d2-a75d-eefc7bfa5c33",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Warthog Throttle + TA320 Stick;CHT Flight Yoke;Thrustmaster TA320 Only",
+                    "action": "Fire Hold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e61113a0-98d1-4ec5-bafb-8cc4137c22d0",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard;Warthog Throttle + TA320 Stick;CHT Flight Yoke;Thrustmaster TA320 Only",
+                    "action": "Fire Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "00c903a3-0c0b-4b81-906f-48911c530eea",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard;CHT Flight Yoke;Thrustmaster TA320 Only;Warthog Throttle + TA320 Stick",
+                    "action": "Fire Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bc2f8663-b841-4e3a-b8b2-a5c3ba87245a",
+                    "path": "<Keyboard>/o",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Speed Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a42b834-e98d-46ce-a1f4-ac8df59a170d",
+                    "path": "<HID::Thrustmaster T.A320 Pilot>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Warthog Throttle + TA320 Stick;Thrustmaster TA320 Only",
+                    "action": "Boost Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36a0d2a5-4964-48fb-a080-2d1600fe1594",
+                    "path": "<Keyboard>/f12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Boost Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5d58cf56-5f9e-432a-82d2-298cc6f0a266",
+                    "path": "<HID::CH Products CH FLIGHT SIM YOKE USB>/hat",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CHT Flight Yoke",
+                    "action": "View Hatswitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "05f030c7-6a35-4099-8b79-1989f9f48e52",
+                    "path": "<HID::Thrustmaster T.A320 Pilot>/hat",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Warthog Throttle + TA320 Stick;Thrustmaster TA320 Only",
+                    "action": "View Hatswitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c71d43ed-f2e6-419b-a049-4f5ade39cc96",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard;CHT Flight Yoke;Thrustmaster TA320 Only;Warthog Throttle + TA320 Stick",
+                    "action": "Weapon Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "874aebbb-1659-4989-90e5-2de5c5b80860",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Target Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8061cea7-b172-405d-a8d4-7e4aa5383221",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Target Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ae28761a-4103-4384-8a2e-bbef71b30c10",
+                    "path": "<Keyboard>/capsLock",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Target Lock",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "throttle",
+                    "id": "6ca298dd-173c-40f2-9e12-c1be08502fb4",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle Lever(New)",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "cced27b9-6c7e-475f-ba5b-1369938734ca",
+                    "path": "<Keyboard>/numpad2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle Lever(New)",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "301f948d-9b6a-4ce9-a761-6aa4c4d63ce1",
+                    "path": "<Keyboard>/numpad1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle Lever(New)",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "pitch",
+                    "id": "403ae79b-4365-4b91-844e-6a9aeb16fc2e",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch Lever(New)",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "885b3a24-ae69-4846-9b88-f4b949eb2260",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch Lever(New)",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "e694f82a-920c-4581-9985-ca1de5bc8316",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch Lever(New)",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "roll",
+                    "id": "47e26686-feda-447c-bebc-35e934fac856",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll Lever(New)",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "d0f49a7c-bbb2-452f-9744-33b81f74ebe4",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll Lever(New)",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "904f1e46-b4fc-4157-abd7-39da86c9fa4f",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll Lever(New)",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Turn",
+                    "id": "2cbc251f-1a9f-4e96-a505-d6854ed24a0d",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Right Turn",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "957eceb3-7336-4aa5-9fff-8fc235aa2987",
+                    "path": "<Keyboard>/#(Q)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Right Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "1b2387dc-5c07-437a-a3b2-72f1994ef6a6",
+                    "path": "<Keyboard>/#(E)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Right Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Helicopter",
+            "id": "32843161-2840-43dc-a7f3-65b90eda3ea8",
+            "actions": [
+                {
+                    "name": "Actuator Lever",
+                    "type": "PassThrough",
+                    "id": "f391db92-67a6-4588-aa03-13ea4ef5ddf1",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Yaw Input",
+                    "type": "PassThrough",
+                    "id": "eeab0f8e-4c83-408d-8efc-304cba2c1e18",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Roll Input",
+                    "type": "PassThrough",
+                    "id": "218704e0-992d-4142-a48f-921909d3cf64",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pitch Input",
+                    "type": "PassThrough",
+                    "id": "5faa1e0e-fc1f-4a4d-9fe4-1f8d1c9ae961",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(max=1),Invert",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c8e24587-a399-41a4-81c9-f9a0ef7dbaf2",
+                    "path": "<HID::Thrustmaster Throttle - HOTAS Warthog>/slider",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Actuator Lever",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7343175e-4def-4982-b6c3-436018eebc1e",
+                    "path": "<HID::Logitech Logitech Extreme 3D>/rz",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Yaw Input",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "91e3877d-2198-428b-b32c-c894015e0132",
+                    "path": "<HID::Logitech Logitech Extreme 3D>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll Input",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8f4fa55-5049-4b50-80d7-235b7fb7855b",
+                    "path": "<HID::Logitech Logitech Extreme 3D>/stick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch Input",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Warthog Throttle + TA320 Stick",
+            "bindingGroup": "Warthog Throttle + TA320 Stick",
+            "devices": [
+                {
+                    "devicePath": "<HID::Thrustmaster T.A320 Pilot>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<HID::Thrustmaster Throttle - HOTAS Warthog>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "CHT Flight Yoke",
+            "bindingGroup": "CHT Flight Yoke",
+            "devices": [
+                {
+                    "devicePath": "<HID::CH Products CH FLIGHT SIM YOKE USB>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Thrustmaster TA320 Only",
+            "bindingGroup": "Thrustmaster TA320 Only",
+            "devices": [
+                {
+                    "devicePath": "<HID::Thrustmaster T.A320 Pilot>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

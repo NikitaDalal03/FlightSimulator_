@@ -1,0 +1,74 @@
+{
+    "name": "VRInputActions",
+    "maps": [
+        {
+            "name": "Reload",
+            "id": "48a7c20e-1cb7-420d-b7e3-c1113790d0f6",
+            "actions": [
+                {
+                    "name": "Restart",
+                    "type": "Button",
+                    "id": "25a1caac-c22b-4122-afdd-ccb5edab649c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "e7e77251-22b9-4fc0-9f5c-622d72728852",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Play",
+                    "type": "Button",
+                    "id": "e2a6504c-fb85-442b-af87-b9dcf4c29a98",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d05520fd-c9f5-43e3-ac0d-d3183839f837",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Restart",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4c3adf0-2ca7-43d6-a71b-1ffe8ec10eb9",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f4a074a-31b2-4b73-8093-e1a19221e36a",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Play",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
