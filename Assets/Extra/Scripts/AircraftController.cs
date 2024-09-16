@@ -15,14 +15,9 @@ public class AircraftController : MonoBehaviour
     public Canvas crashScreen;
     public GameObject fadeOutPanel;
 
-    ////initial position and rotation
-    //private Vector3 initialPosition;
-    //private Quaternion initialRotation;
-
     private void Start()
     {
-        //initialPosition = transform.position;
-        //initialRotation = transform.rotation; 
+
 
         crashScreen.enabled = false;
         fadeOutPanel.SetActive(false);
@@ -96,26 +91,19 @@ public class AircraftController : MonoBehaviour
         InstantiateAircraft.instance.OnDestroy();
 
         //SceneManager.LoadScene(2);
-        //Canvas menuCanvas = FindObjectOfType<Canvas>();
-        //if (menuCanvas != null)
-        //{ 
-        //    menuCanvas.enabled = true;
-        //}
-        //ResetAircraftPosition();
+        Canvas menuCanvas = FindObjectOfType<Canvas>();
+        if (menuCanvas != null)
+        {
+            menuCanvas.enabled = true;
+        }
 
         CameraController.instance.SwitchToCamera(CameraType.menuCam);
         InstantiateAircraft.instance.InstantiatePlane();
+        CheckpointSpawning.instance.DestroyPreviousCheckpoints();
+        CheckpointSpawning.instance.SpawnCheckpoints();
 
-       
         fadeOutPanel.SetActive(false);
     }
 
 
-    //public void ResetAircraftPosition()
-    //{ 
-    //    aircraftRigidbody.velocity = Vector3.zero;
-    //    aircraftRigidbody.angularVelocity = Vector3.zero;
-    //    aircraftRigidbody.transform.position = initialPosition;
-    //    aircraftRigidbody.transform.rotation = initialRotation;
-    //}
 }

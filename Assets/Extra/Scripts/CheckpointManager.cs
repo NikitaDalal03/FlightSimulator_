@@ -5,10 +5,10 @@ using System.Collections;
 
 public class CheckpointManager : MonoBehaviour
 {
-    public GameObject checkpointPrefab;
+
     public GameObject checkpointCrossEffect;
 
-    public Transform[] checkpointPositions;
+
     public TextMeshPro checkpointText;
     public Transform directionalArrow;
     public float rotationSpeed = 5f;
@@ -20,31 +20,24 @@ public class CheckpointManager : MonoBehaviour
 
     void Start()
     {
-        SpawnCheckpoints();
+
         UpdateCheckpointText();
         UpdateArrowDirection();
         checkpointCrossEffect.SetActive(false);
         //AudioManager.inst.PlaySound(SoundName.welcome);
     }
 
-    void SpawnCheckpoints()
-    {
-        foreach (var position in checkpointPositions)
-        {
-            Instantiate(checkpointPrefab, position.position, position.rotation);
-        }
-    }
 
     public void CrossCheckpoint()
     {
-        if (checkpointsCrossed < checkpointPositions.Length)
+        if (checkpointsCrossed < CheckpointSpawning.instance.checkpointPositions.Length)
         {
             checkpointsCrossed++;
             UpdateCheckpointText();
             UpdateArrowDirection();
             PlayCheckpointCrossSound();
 
-            if (checkpointsCrossed == checkpointPositions.Length)
+            if (checkpointsCrossed == CheckpointSpawning.instance.checkpointPositions.Length)
             {
                 //SceneManager.LoadScene(1);
                 CameraController.instance.SwitchToCamera(CameraType.vrCam);
@@ -56,7 +49,7 @@ public class CheckpointManager : MonoBehaviour
     {
         if (checkpointText != null)
         {
-            checkpointText.text = $"{checkpointsCrossed}/{checkpointPositions.Length}";
+            checkpointText.text = $"{checkpointsCrossed}/{CheckpointSpawning.instance.checkpointPositions.Length}";
             StartCoroutine(ActivateCheckpointEffect());
         }
     }
@@ -70,9 +63,9 @@ public class CheckpointManager : MonoBehaviour
 
     void UpdateArrowDirection()
     {
-        if (directionalArrow != null && checkpointsCrossed < checkpointPositions.Length)
+        if (directionalArrow != null && checkpointsCrossed < CheckpointSpawning.instance.checkpointPositions.Length)
         {
-            Vector3 targetPosition = checkpointPositions[checkpointsCrossed].position;
+            Vector3 targetPosition = CheckpointSpawning.instance.checkpointPositions[checkpointsCrossed].position;
 
             // Calculate the direction to the checkpoint 
             Vector3 direction = (targetPosition - directionalArrow.position).normalized;

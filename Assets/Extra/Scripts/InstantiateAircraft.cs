@@ -8,6 +8,8 @@ public class InstantiateAircraft : MonoBehaviour
     public GameObject aircraftPrefab;
     private GameObject currentAircraft;
 
+    public Transform spawnPosition;
+
     private void Awake()
     {
         if (instance == null)
@@ -18,12 +20,8 @@ public class InstantiateAircraft : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
 
-    private void Start()
-    {
-         //aircraftPrefab.SetActive(false);
-         //InstantiatePlane();       
+        InstantiatePlane();
     }
 
     public void InstantiatePlane()
@@ -33,22 +31,17 @@ public class InstantiateAircraft : MonoBehaviour
             Destroy(currentAircraft);
         }
 
-        currentAircraft = Instantiate(aircraftPrefab);
-        currentAircraft.transform.position = aircraftPrefab.transform.position;
+        currentAircraft = Instantiate(aircraftPrefab, spawnPosition.position, spawnPosition.rotation);
         currentAircraft.SetActive(true);
-
-        //var plane = Instantiate(aircraftPrefab);
-        //plane.transform.position = aircraftPrefab.transform.position;
-        //plane.SetActive(true);
     }
 
     public void OnDestroy()
     {
+ 
         if (currentAircraft != null)
         {
             Destroy(currentAircraft);
             currentAircraft = null;
         }
-        //Destroy(aircraftPrefab);
     }
 }
