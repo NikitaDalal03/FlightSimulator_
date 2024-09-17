@@ -44,4 +44,15 @@ public class InstantiateAircraft : MonoBehaviour
             currentAircraft = null;
         }
     }
+
+    public bool IsAircraftGrounded()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(currentAircraft.transform.position, Vector3.down, out hit, 1f))
+        {
+            return hit.collider != null && hit.collider.CompareTag("Ground");
+        }
+        return false;
+    }
+
 }

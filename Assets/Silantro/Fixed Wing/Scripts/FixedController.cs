@@ -619,12 +619,15 @@ namespace Oyedoyin.FixedWing
         /// <summary>
         /// 
         /// </summary>
-        
+
+        public bool isEngineTurnOn = false;
+
         [ContextMenu("StartEngine")]
         public override void TurnOnEngines()
         {
             if (isControllable)
             {
+                isEngineTurnOn = true;
                 if (m_engineType == EngineType.Piston) { foreach (SilantroPiston engine in m_pistons) { if (!engine.core.active) { engine.core.StartEngine(); } } }
                 //if (engineType == Controller.EngineType.Electric) { foreach (SilantroElectricMotor engine in controller.motors) { if (engine.engineState != SilantroElectricMotor.EngineState.Running) { engine.StartEngine(); } } }
                 if (m_engineType == EngineType.Jet)
@@ -634,8 +637,8 @@ namespace Oyedoyin.FixedWing
                     if (jetType == JetType.Turboprop) { foreach (SilantroTurboprop engine in m_props) { if (!engine.core.active) { engine.core.StartEngine(); } } }
                 }
             }
-            AudioManager.inst.PlaySound(SoundName.throttleThrust);
         }
+
 
         /// <summary>
         /// 

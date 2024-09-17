@@ -69,8 +69,6 @@ public class CameraController : MonoBehaviour
         {
             Debug.LogWarning("Camera type not found: " + cameraType);
         }
-    }
-
-    
+    }    
 }
 

@@ -1,9 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using Oyedoyin.Common;
 using UnityEngine;
-using System.Threading.Tasks;
-using UnityEngine.SceneManagement;
 
 public class AircraftController : MonoBehaviour
 {
@@ -15,10 +12,14 @@ public class AircraftController : MonoBehaviour
     public Canvas crashScreen;
     public GameObject fadeOutPanel;
 
+    // Landing logic
+    private bool isLanded = false;
+    private bool landingTimerStarted = false;
+    public float landingTimeThreshold = 30f; 
+    private float landingTimer = 0f;
+
     private void Start()
     {
-
-
         crashScreen.enabled = false;
         fadeOutPanel.SetActive(false);
 
@@ -26,6 +27,21 @@ public class AircraftController : MonoBehaviour
         DontDestroyOnLoad(fadeOutPanel.gameObject);
 
         checkpointManager = FindObjectOfType<CheckpointManager>();
+    }
+
+    private void Update()
+    {
+        // Check if the aircraft is landed and stationary
+        if (isLanded && landingTimerStarted)
+        {
+            landingTimer += Time.deltaTime;
+
+            // After 30 seconds of being landed, switch to win camera
+            if (landingTimer >= landingTimeThreshold)
+            {
+                SwitchToWinCamera();
+            }
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -40,9 +56,16 @@ public class AircraftController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        // Check if the collision is strong enough to be considered a crash
         if (collision.relativeVelocity.magnitude > aircraftController.crashThreshold)
         {
             HandleFlightCrash(aircraftRigidbody, aircraftController);
+        }
+        // Check if the aircraft has landed safely (e.g., not crashing but touching the ground)
+        else if (collision.gameObject.CompareTag("Ground"))
+        {
+            isLanded = true;
+            StartLandingTimer();
         }
     }
 
@@ -64,17 +87,31 @@ public class AircraftController : MonoBehaviour
             rigidbody.AddForce(Vector3.down * controller.crashImpactForce, ForceMode.Impulse);
 
             controller.TurnOffEngines();
-            //controller.ToggleBrakeState();
+            controller.isCrashed = true;
 
             if (controller.gearActuator != null && controller.gearActuator.actuatorState == SilantroActuator.ActuatorState.Engaged)
             {
                 controller.gearActuator.DisengageActuator();
             }
 
-            controller.isCrashed = true;
-            
             StartCoroutine(LoadSceneCoroutine(2));
         }
+    }
+
+    private void StartLandingTimer()
+    {
+        if (!landingTimerStarted)
+        {
+            landingTimerStarted = true;
+            landingTimer = 0f; 
+        }
+    }
+
+    private void SwitchToWinCamera()
+    {
+        landingTimerStarted = false; 
+        CameraController.instance.SwitchToCamera(CameraType.winCam); 
+        Debug.Log("Switched to Win Camera after successful landing");
     }
 
     private IEnumerator LoadSceneCoroutine(int delay)
@@ -83,20 +120,19 @@ public class AircraftController : MonoBehaviour
 
         crashScreen.enabled = true;
         fadeOutPanel.SetActive(true);
-        
+
         yield return new WaitForSeconds(delay);
         Debug.Log("Crash");
 
         Destroy(gameObject);
         InstantiateAircraft.instance.OnDestroy();
 
-        //SceneManager.LoadScene(2);
         Canvas menuCanvas = FindObjectOfType<Canvas>();
         if (menuCanvas != null)
         {
             menuCanvas.enabled = true;
         }
-
+        
         CameraController.instance.SwitchToCamera(CameraType.menuCam);
         InstantiateAircraft.instance.InstantiatePlane();
         CheckpointSpawning.instance.DestroyPreviousCheckpoints();
@@ -104,6 +140,4 @@ public class AircraftController : MonoBehaviour
 
         fadeOutPanel.SetActive(false);
     }
-
-
 }

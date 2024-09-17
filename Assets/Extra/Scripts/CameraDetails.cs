@@ -42,5 +42,6 @@ public enum CameraType
     startCam,
     menuCam,
     vrCam,
+    winCam,
     None
 }

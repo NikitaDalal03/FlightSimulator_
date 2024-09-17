@@ -86,7 +86,7 @@ public class SilantroButton : MonoBehaviour
     // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     private void Start()
     {
-        if (clickSound) { Oyedoyin.Common.Misc.Handler.SetupSoundSource(this.transform, clickSound, "Sound Point", 50f, true, false, out buttonSource); buttonSource.volume = 0.5f; }
+        if (clickSound) { Oyedoyin.Common.Misc.Handler.SetupSoundSource(this.transform, clickSound, "Sound Point", 50f, true, false, out buttonSource); /*buttonSource.volume = 0.5f;*/ }
 
         // --------------- Set Initial Variables 
         if (buttonAction == ButtonAction.Press)

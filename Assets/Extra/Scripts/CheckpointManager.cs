@@ -7,8 +7,6 @@ public class CheckpointManager : MonoBehaviour
 {
 
     public GameObject checkpointCrossEffect;
-
-
     public TextMeshPro checkpointText;
     public Transform directionalArrow;
     public float rotationSpeed = 5f;
@@ -39,11 +37,14 @@ public class CheckpointManager : MonoBehaviour
 
             if (checkpointsCrossed == CheckpointSpawning.instance.checkpointPositions.Length)
             {
-                //SceneManager.LoadScene(1);
-                CameraController.instance.SwitchToCamera(CameraType.vrCam);
+                if (InstantiateAircraft.instance.IsAircraftGrounded())
+                {
+                    CameraController.instance.SwitchToCamera(CameraType.winCam);
+                }
             }
         }
     }
+
 
     void UpdateCheckpointText()
     {
@@ -54,12 +55,14 @@ public class CheckpointManager : MonoBehaviour
         }
     }
 
+
     IEnumerator ActivateCheckpointEffect()
     {
         checkpointCrossEffect.SetActive(true);
         yield return new WaitForSeconds(4f); 
         checkpointCrossEffect.SetActive(false);
     }
+
 
     void UpdateArrowDirection()
     {
@@ -77,10 +80,12 @@ public class CheckpointManager : MonoBehaviour
         }
     }
 
+
     void Update()
     {
         UpdateArrowDirection();
     }
+
 
     void PlayCheckpointCrossSound()
     {
@@ -89,4 +94,7 @@ public class CheckpointManager : MonoBehaviour
             audioSource.PlayOneShot(checkpointCrossClip); 
         }
     }
+
+   
+
 }
