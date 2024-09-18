@@ -2753,6 +2753,8 @@ MonoBehaviour:
   leverOutput: 0
   pitchOutput: 0
   rollOutput: 0
+  isleverActive: 0
+  isCyclicActive: 0
 --- !u!1 &170366765431951071
 GameObject:
   m_ObjectHideFlags: 0
@@ -19265,6 +19267,9 @@ MonoBehaviour:
   highlightDuration: 2
   maxFresnelPower: 5
   minFresnelPower: 0.5
+  fixedController: {fileID: 1006867563856842089}
+  lever: {fileID: 2228025192251191915}
+  cycliclever: {fileID: 1758426483888139819}
 --- !u!1 &3819591328196746673
 GameObject:
   m_ObjectHideFlags: 0
@@ -20031,6 +20036,8 @@ MonoBehaviour:
   leverOutput: 0
   pitchOutput: 0
   rollOutput: 0
+  isleverActive: 0
+  isCyclicActive: 0
 --- !u!1 &4175861841604787682
 GameObject:
   m_ObjectHideFlags: 0
@@ -38553,6 +38560,7 @@ MonoBehaviour:
   m_flapLimit: 0
   m_slatLimit: 0
   m_spoilerLimit: 0
+  isEngineTurnOn: 0
 --- !u!114 &8060429563502693176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38584,6 +38592,8 @@ MonoBehaviour:
   aircraftController: {fileID: 1006867563856842089}
   crashScreen: {fileID: 7541162572191517905}
   fadeOutPanel: {fileID: 1110323441673848707}
+  landingTimeThreshold: 5
+  requiredAirborneTime: 30
 --- !u!1 &5494674103568218990
 GameObject:
   m_ObjectHideFlags: 0

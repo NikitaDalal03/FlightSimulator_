@@ -203,38 +203,59 @@ namespace Oyedoyin.Common
 
             if (m_controller != null &&/* m_controller.triggerValue < 0.9f &&*/ m_controller.gripValue < 0.9f && leverHeld) { leverHeld = false; }
         }
+
         /// <summary>
         /// 
-        /// </summary> 
+        /// </summary>
+        public bool isleverActive = false;
+        public bool isCyclicActive = false;
         private void AnalyseLeverInput()
         {
             if (m_mode == LeverMode.RotateOnly)
             {
                 if (leverType == LeverType.ControlStick)
-                {
+                {                 
                     if (pitchAxisState == AxisState.Normal) { pitchOutput = -value.y; } else { pitchOutput = value.y; }
                     if (rollAxisState == AxisState.Normal) { rollOutput = -value.x; } else { rollOutput = value.x; }
+                    if ( pitchOutput >= 0 || pitchOutput >= -0.1 || rollOutput >= 0 || rollOutput >= -0.1)
+                    {
+                        isCyclicActive = true;
+                    }
                 }
+                Debug.Log("pitchOutput : " +pitchOutput);
+                Debug.Log("rollOutput : " +rollOutput);
+               
                 if (leverType == LeverType.SingleAxis)
-                {
+                {               
                     if (leverAxis == RotationAxis.X) { leverOutput = leverAxisState == AxisState.Inverted ? 1 - ((-value.x + 1) / 2) : (-value.x + 1) / 2; }
-                    if (leverAxis == RotationAxis.Y) { leverOutput = leverAxisState == AxisState.Inverted ? 1 - ((-value.y + 1) / 2) : (-value.y + 1) / 2; }
+                    if (leverAxis == RotationAxis.Y) { leverOutput = leverAxisState == AxisState.Inverted ? 1 - ((-value.y + 1) / 2) : (-value.y + 1) / 2; }                   
+                    if(leverOutput >= 0.5)
+                    {
+                        isleverActive = true;
+                    }
                 }
+                Debug.Log("value : " + -value.y);
+                Debug.Log("leverOutput : " +leverOutput);
+
             }
+
             if (m_mode == LeverMode.SlideOnly)
             {
                 float m_limit = maximumMovement * 0.01f;
                 float m_value = value.x / m_limit;
                 leverOutput = leverAxisState == AxisState.Inverted ? 1 - ((m_value + 1) / 2) : (m_value + 1) / 2;
             }
+
             if (m_mode == LeverMode.SlideAndRotate && leverType == LeverType.ControlYoke)
             {
                 float m_limit = maximumMovement * 0.01f;
                 float m_value = value.x / m_limit;
                 if (pitchAxisState == AxisState.Normal) { pitchOutput = m_value; } else { pitchOutput = -m_value; }
                 if (rollAxisState == AxisState.Normal) { rollOutput = value.y; } else { rollOutput = -value.y; }
-            }
+                
+            }           
         }
+
         /// <summary>
         /// 
         /// </summary>

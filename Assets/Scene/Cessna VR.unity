@@ -46399,6 +46399,8 @@ MonoBehaviour:
   leverOutput: 0
   pitchOutput: 0
   rollOutput: 0
+  isleverActive: 0
+  isCyclicActive: 0
 --- !u!1 &1169580275
 GameObject:
   m_ObjectHideFlags: 0
@@ -47523,6 +47525,8 @@ MonoBehaviour:
   leverOutput: 0
   pitchOutput: 0
   rollOutput: 0
+  isleverActive: 0
+  isCyclicActive: 0
 --- !u!54 &1264647723
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48781,8 +48785,8 @@ Terrain:
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
+  m_HeightmapPixelError: 40
+  m_SplatMapDistance: 500
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
@@ -59206,6 +59210,8 @@ MonoBehaviour:
   leverOutput: 0
   pitchOutput: 0
   rollOutput: 0
+  isleverActive: 0
+  isCyclicActive: 0
 --- !u!54 &1794716460
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -60050,6 +60056,8 @@ MonoBehaviour:
   leverOutput: 0
   pitchOutput: 0
   rollOutput: 0
+  isleverActive: 0
+  isCyclicActive: 0
 --- !u!4 &1845286076
 Transform:
   m_ObjectHideFlags: 0
@@ -84910,6 +84918,7 @@ MonoBehaviour:
   crashScreen: {fileID: 0}
   fadeOutPanel: {fileID: 0}
   landingTimeThreshold: 30
+  requiredAirborneTime: 30
 --- !u!114 &2061642880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85782,6 +85791,7 @@ MonoBehaviour:
   m_flapLimit: 0
   m_slatLimit: 0
   m_spoilerLimit: 0
+  isEngineTurnOn: 0
 --- !u!136 &2061642882
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -93891,6 +93901,7 @@ MonoBehaviour:
   m_flapLimit: 0
   m_slatLimit: 0
   m_spoilerLimit: 0
+  isEngineTurnOn: 0
 --- !u!4 &2620600978659677579
 Transform:
   m_ObjectHideFlags: 0
@@ -94017,6 +94028,7 @@ MonoBehaviour:
   crashScreen: {fileID: 0}
   fadeOutPanel: {fileID: 0}
   landingTimeThreshold: 30
+  requiredAirborneTime: 30
 --- !u!1 &2620600978791330424
 GameObject:
   m_ObjectHideFlags: 0

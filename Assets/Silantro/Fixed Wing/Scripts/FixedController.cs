@@ -658,6 +658,7 @@ namespace Oyedoyin.FixedWing
                 }
             }
         }
+
         /// <summary>
         /// Activate boost or afterburner
         /// </summary>

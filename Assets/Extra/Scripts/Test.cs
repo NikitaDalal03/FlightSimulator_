@@ -127,11 +127,5 @@ public class Test : MonoBehaviour
         }
     }
     
-    private void Update()
-    {
-        //silantroCore.controller.m_input._pitchTrimInput = testvalue;
-        //silantroCore.controller.m_input._rawPitchInput = pitchvalue;
-        //silantroCore.controller.m_input._rawRollInput = testvalue;
-        //silantroCore.controller.m_input._rawPitchInput = testvalue;
-    }
+
 }

@@ -12,11 +12,16 @@ public class AircraftController : MonoBehaviour
     public Canvas crashScreen;
     public GameObject fadeOutPanel;
 
-    // Landing logic
+    // Landing 
     private bool isLanded = false;
     private bool landingTimerStarted = false;
-    public float landingTimeThreshold = 30f; 
+    public float landingTimeThreshold = 5f;
     private float landingTimer = 0f;
+
+    // Airborne 
+    private bool isAirborne = false;
+    private float airborneTime = 0f;
+    public float requiredAirborneTime = 30f; 
 
     private void Start()
     {
@@ -31,12 +36,16 @@ public class AircraftController : MonoBehaviour
 
     private void Update()
     {
-        // Check if the aircraft is landed and stationary
+        if (isAirborne && !isLanded)
+        {
+            airborneTime += Time.deltaTime;
+        }
+
         if (isLanded && landingTimerStarted)
         {
             landingTimer += Time.deltaTime;
 
-            // After 30 seconds of being landed, switch to win camera
+        
             if (landingTimer >= landingTimeThreshold)
             {
                 SwitchToWinCamera();
@@ -56,16 +65,37 @@ public class AircraftController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Check if the collision is strong enough to be considered a crash
+        // If the collision is strong enough to be considered a crash
         if (collision.relativeVelocity.magnitude > aircraftController.crashThreshold)
         {
             HandleFlightCrash(aircraftRigidbody, aircraftController);
         }
-        // Check if the aircraft has landed safely (e.g., not crashing but touching the ground)
+
         else if (collision.gameObject.CompareTag("Ground"))
         {
-            isLanded = true;
-            StartLandingTimer();
+            //cond for checking the air time
+            if (airborneTime >= requiredAirborneTime)
+            {
+                isLanded = true;
+                StartLandingTimer();
+            }
+            else
+            {
+                Debug.Log("Aircraft tried to land before being in the air for the required time.");
+            }
+
+            // Reset airborne 
+            isAirborne = false;
+            airborneTime = 0f;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        //cond for flying
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isAirborne = true;
         }
     }
 
@@ -103,14 +133,14 @@ public class AircraftController : MonoBehaviour
         if (!landingTimerStarted)
         {
             landingTimerStarted = true;
-            landingTimer = 0f; 
+            landingTimer = 0f;
         }
     }
 
     private void SwitchToWinCamera()
     {
-        landingTimerStarted = false; 
-        CameraController.instance.SwitchToCamera(CameraType.winCam); 
+        landingTimerStarted = false;
+        CameraController.instance.SwitchToCamera(CameraType.winCam);
         Debug.Log("Switched to Win Camera after successful landing");
     }
 
@@ -132,7 +162,7 @@ public class AircraftController : MonoBehaviour
         {
             menuCanvas.enabled = true;
         }
-        
+
         CameraController.instance.SwitchToCamera(CameraType.menuCam);
         InstantiateAircraft.instance.InstantiatePlane();
         CheckpointSpawning.instance.DestroyPreviousCheckpoints();
