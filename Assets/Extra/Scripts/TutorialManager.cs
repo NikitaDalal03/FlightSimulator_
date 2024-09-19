@@ -172,6 +172,7 @@ public class TutorialManager : MonoBehaviour
     public static TutorialManager inst;
     public SoundName[] tutorialSequence;
     public GameObject[] tutorialObjects;
+
     public float highlightDuration = 2f;
     public float maxFresnelPower = 5f;
     public float minFresnelPower = 0.5f;
@@ -206,13 +207,12 @@ public class TutorialManager : MonoBehaviour
         {
             SoundName audioToPlay = tutorialSequence[currentStepIndex];
             Debug.Log("SoundName : " + audioToPlay);
-
-            // Play the sound for this step 
             AudioManager.inst.PlaySound(audioToPlay);
 
-            // Highlight the corresponding object, if available 
+            // Highlight object if present 
             if (tutorialObjects != null && currentStepIndex < tutorialObjects.Length)
             {
+
                 GameObject obj = tutorialObjects[currentStepIndex];
                 if (obj != null)
                 {
@@ -220,21 +220,16 @@ public class TutorialManager : MonoBehaviour
                 }
             }
 
-            if (currentStepIndex < 2)
-            {
-                // First two steps: Play without checking conditions
-                StartCoroutine(WaitForAudioToFinish(false));
-            }
-            else
-            {
-                // For subsequent steps, check player input
-                StartCoroutine(WaitForAudioToFinish(true));
-            }
+
+            bool checkTaskCompletion = currentStepIndex >= 1;
+            
+            StartCoroutine(WaitForAudioToFinish(checkTaskCompletion));
         }
     }
 
     IEnumerator WaitForAudioToFinish(bool checkTaskCompletion)
     {
+        // Wait until audio finishes 
         while (AudioManager.inst.IsAudioPlaying())
         {
             yield return null;
@@ -243,7 +238,8 @@ public class TutorialManager : MonoBehaviour
 
         if (checkTaskCompletion)
         {
-            StartCoroutine(CheckTaskCompletion());
+            // Wait until completion 
+            yield return StartCoroutine(CheckTaskCompletion());
         }
         else
         {
@@ -255,25 +251,40 @@ public class TutorialManager : MonoBehaviour
     {
         isTaskCompleted = CheckCurrentInstructionCondition();
 
+        // Get the current GameObject to highlight
+        GameObject currentObject = null;
+        if (tutorialObjects != null && currentStepIndex < tutorialObjects.Length)
+        {
+            currentObject = tutorialObjects[currentStepIndex];
+        }
+
+     
+        if (currentObject != null)
+        {
+            HighlightObject(currentObject); 
+        }
+
         while (!isTaskCompleted)
         {
             Debug.Log("Task not completed. Waiting 5 seconds to repeat the instruction.");
             yield return new WaitForSeconds(5f);
 
-            // Repeat the same instruction
+            // Repeat the same instruction 
             AudioManager.inst.PlaySound(tutorialSequence[currentStepIndex]);
             while (AudioManager.inst.IsAudioPlaying())
             {
                 yield return null;
+
             }
 
             // Recheck task condition after repeating the instruction
             isTaskCompleted = CheckCurrentInstructionCondition();
         }
 
-        // If task is completed, proceed to the next step
+        // Move to the next step
         ProceedToNextStep();
     }
+
 
     void ProceedToNextStep()
     {
@@ -289,19 +300,22 @@ public class TutorialManager : MonoBehaviour
         }
     }
 
+
     bool CheckCurrentInstructionCondition()
     {
-        // Check conditions based on the current step
-        if (currentStepIndex == 2)
+        if (currentStepIndex == 1)
         {
+            Debug.Log("EngineOn");
             return fixedController.isEngineTurnOn;
+        }
+        else if (currentStepIndex == 2)
+        {
+            Debug.Log("leverSet");
+            return lever.isleverActive;
         }
         else if (currentStepIndex == 3)
         {
-            return lever.isleverActive;
-        }
-        else if (currentStepIndex == 4)
-        {
+            Debug.Log("cyclicLever Set");
             return cycliclever.isCyclicActive;
         }
         return true; 
@@ -372,5 +386,4 @@ public class TutorialManager : MonoBehaviour
         }
     }
 }
-
 

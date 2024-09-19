@@ -52,6 +52,9 @@ namespace Oyedoyin.Common
         private Vector3 localHandPosition;
         Vector3 m_yokeAxisRoll;
 
+        public bool isleverActive = false;
+        public bool isCyclicActive = false;
+
         /// <summary>
         /// 
         /// </summary>
@@ -207,8 +210,7 @@ namespace Oyedoyin.Common
         /// <summary>
         /// 
         /// </summary>
-        public bool isleverActive = false;
-        public bool isCyclicActive = false;
+
         private void AnalyseLeverInput()
         {
             if (m_mode == LeverMode.RotateOnly)
@@ -217,26 +219,32 @@ namespace Oyedoyin.Common
                 {                 
                     if (pitchAxisState == AxisState.Normal) { pitchOutput = -value.y; } else { pitchOutput = value.y; }
                     if (rollAxisState == AxisState.Normal) { rollOutput = -value.x; } else { rollOutput = value.x; }
-                    if ( pitchOutput >= 0 || pitchOutput >= -0.1 || rollOutput >= 0 || rollOutput >= -0.1)
+                    if (Mathf.Abs(pitchOutput) > 0.1f || Mathf.Abs(rollOutput) > 0.1f)
                     {
                         isCyclicActive = true;
                     }
+                    else
+                    {
+                        isCyclicActive = false;
+                    }
+                    Debug.Log("pitchOutput: " + Mathf.Abs(pitchOutput));
+                    Debug.Log("pitchOutput: " + Mathf.Abs(rollOutput));
                 }
-                Debug.Log("pitchOutput : " +pitchOutput);
-                Debug.Log("rollOutput : " +rollOutput);
                
                 if (leverType == LeverType.SingleAxis)
                 {               
                     if (leverAxis == RotationAxis.X) { leverOutput = leverAxisState == AxisState.Inverted ? 1 - ((-value.x + 1) / 2) : (-value.x + 1) / 2; }
-                    if (leverAxis == RotationAxis.Y) { leverOutput = leverAxisState == AxisState.Inverted ? 1 - ((-value.y + 1) / 2) : (-value.y + 1) / 2; }                   
-                    if(leverOutput >= 0.5)
+                    if (leverAxis == RotationAxis.Y) { leverOutput = leverAxisState == AxisState.Inverted ? 1 - ((-value.y + 1) / 2) : (-value.y + 1) / 2; }
+                    if (Mathf.Abs(leverOutput - 0.5f) > 0.1f)
                     {
                         isleverActive = true;
                     }
+                    else
+                    {
+                        isleverActive = false;
+                    }
+                    Debug.Log("everOutput :" + Mathf.Abs(leverOutput - 0.5f));
                 }
-                Debug.Log("value : " + -value.y);
-                Debug.Log("leverOutput : " +leverOutput);
-
             }
 
             if (m_mode == LeverMode.SlideOnly)
@@ -244,6 +252,14 @@ namespace Oyedoyin.Common
                 float m_limit = maximumMovement * 0.01f;
                 float m_value = value.x / m_limit;
                 leverOutput = leverAxisState == AxisState.Inverted ? 1 - ((m_value + 1) / 2) : (m_value + 1) / 2;
+                if (Mathf.Abs(leverOutput - 0.5f) > 0.1f)
+                {
+                    isleverActive = true;
+                }
+                else
+                {
+                    isleverActive = false;
+                }
             }
 
             if (m_mode == LeverMode.SlideAndRotate && leverType == LeverType.ControlYoke)
@@ -252,11 +268,18 @@ namespace Oyedoyin.Common
                 float m_value = value.x / m_limit;
                 if (pitchAxisState == AxisState.Normal) { pitchOutput = m_value; } else { pitchOutput = -m_value; }
                 if (rollAxisState == AxisState.Normal) { rollOutput = value.y; } else { rollOutput = -value.y; }
-                
+                if (Mathf.Abs(pitchOutput) > 0.1f || Mathf.Abs(rollOutput) > 0.1f)
+                {
+                    isCyclicActive = true;
+                }
+                else
+                {
+                    isCyclicActive = false;
+                }
             }           
         }
 
-        /// <summary>
+        /// <summary> 
         /// 
         /// </summary>
         public void Compute()

@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -54,6 +55,11 @@ public class AudioManager : MonoBehaviour
     public void SoundUnmute(bool val)
     {
         Source.mute = val;
+    }
+
+    internal AudioSource GetAudioSource(SoundName soundName)
+    {
+        throw new NotImplementedException();
     }
 }
 
