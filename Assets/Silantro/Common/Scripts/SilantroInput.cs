@@ -214,7 +214,7 @@ namespace Oyedoyin.Common
                 if (m_propPitchTouch != null && m_propPitchTouch.isPressed == true) { isPressed = true; }
                 _controller.touchPressed = isPressed;
 
-                // Collect and Send Inputs
+                // Collect and Send Inputs 
                 if (m_collectiveTouch != null) { _collectiveInput = (1 - m_collectiveTouch.m_yOutput) / 2; }
                 if (m_throttleTouch != null) { _throttleInput = (1 - m_throttleTouch.m_yOutput) / 2; }
                 if (m_propPitchTouch != null) { _propPitchInput = (1 - m_propPitchTouch.m_yOutput) / 2; }
@@ -230,7 +230,7 @@ namespace Oyedoyin.Common
                 //throttle input
                 if (Input.GetKey(KeyCode.Alpha1)) { _throttleInput += 0.01f; } 
                 if (Input.GetKey(KeyCode.Alpha2)) { _throttleInput -= 0.01f; } 
-                //Debug.Log("Throttle Input: " + _throttleInput);
+                //Debug.Log("Throttle Input: " + _throttleInput); 
                 _throttleInput = Mathf.Clamp(_throttleInput, 0f, 1f);
 
                 //Up down

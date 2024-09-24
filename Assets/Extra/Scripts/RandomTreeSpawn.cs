@@ -5,8 +5,7 @@ using UnityEngine;
 using UnityEditor;
 
 public class RandomTreeSpawn : MonoBehaviour
-{
-    
+{    
     [SerializeField] private Vector2 _spawnArea;
     [SerializeField] private List<GameObject> _gameObjectPrefabs;
     [SerializeField] private Transform _parent;
@@ -30,6 +29,7 @@ public class RandomTreeSpawn : MonoBehaviour
             if (Physics.Raycast(_randomSpawnArea, Vector3.down, out hit, Mathf.Infinity))
             {
                 //Instantiate(_gameObjectPrefabs[randomIndex], hit.point + offset, Quaternion.identity, _parent);
+                
                 GameObject prefab = (GameObject)PrefabUtility.InstantiatePrefab(_gameObjectPrefabs[randomIndex]);
                 prefab.transform.position = hit.point;
                 prefab.transform.up = hit.normal;
@@ -44,3 +44,5 @@ public class RandomTreeSpawn : MonoBehaviour
     }
 }
 #endif
+
+

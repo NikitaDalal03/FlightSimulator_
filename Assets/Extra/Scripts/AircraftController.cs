@@ -73,7 +73,7 @@ public class AircraftController : MonoBehaviour
 
         else if (collision.gameObject.CompareTag("Ground"))
         {
-            //cond for checking the air time
+            //cond for checking the air time 
             if (airborneTime >= requiredAirborneTime)
             {
                 isLanded = true;

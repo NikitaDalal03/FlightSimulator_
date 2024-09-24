@@ -18,7 +18,6 @@ public class CheckpointManager : MonoBehaviour
 
     void Start()
     {
-
         UpdateCheckpointText();
         UpdateArrowDirection();
         checkpointCrossEffect.SetActive(false);
