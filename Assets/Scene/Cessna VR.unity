@@ -475,7 +475,7 @@ PrefabInstance:
       addedObject: {fileID: 11456955}
     - targetCorrespondingSourceObject: {fileID: 6296336163422495649, guid: dce2c544adb3642a19ae0697e1688cd7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2126656771}
+      addedObject: {fileID: 773781670}
   m_SourcePrefab: {fileID: 100100000, guid: dce2c544adb3642a19ae0697e1688cd7, type: 3}
 --- !u!4 &11456948 stripped
 Transform:
@@ -2838,7 +2838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &448853048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2852,31 +2852,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <VisibilityTree>k__BackingField:
-    rid: 552191782187171942
+    rid: 552191782187172238
   <CellsCount>k__BackingField: 27
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 552191782187171942
+    - rid: 552191782187172238
       type: {class: VisibilityTree, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         <RootInternal>k__BackingField:
-          rid: 552191782187171943
+          rid: 552191782187172239
         <Height>k__BackingField: 7
         <CellSize>k__BackingField: 4
         <CullingTargets>k__BackingField:
         - {fileID: 1925457039}
         - {fileID: 1017171069}
-        - {fileID: 2126656771}
+        - {fileID: 773781670}
         - {fileID: 416219112}
         - {fileID: 11456959}
         - {fileID: 11456958}
         - {fileID: 11456957}
         - {fileID: 11456956}
         - {fileID: 11456955}
-    - rid: 552191782187171943
+    - rid: 552191782187172239
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -2884,14 +2884,14 @@ MonoBehaviour:
           m_Extent: {x: 8, y: 8, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171944
+          rid: 552191782187172240
         _right:
-          rid: 552191782187171945
+          rid: 552191782187172241
         _visibilityData:
           rid: -2
-    - rid: 552191782187171944
+    - rid: 552191782187172240
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -2899,14 +2899,14 @@ MonoBehaviour:
           m_Extent: {x: 4, y: 8, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171946
+          rid: 552191782187172242
         _right:
-          rid: 552191782187171947
+          rid: 552191782187172243
         _visibilityData:
           rid: -2
-    - rid: 552191782187171945
+    - rid: 552191782187172241
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -2914,14 +2914,14 @@ MonoBehaviour:
           m_Extent: {x: 4, y: 8, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171948
+          rid: 552191782187172244
         _right:
-          rid: 552191782187171949
+          rid: 552191782187172245
         _visibilityData:
           rid: -2
-    - rid: 552191782187171946
+    - rid: 552191782187172242
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -2929,14 +2929,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 8, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171950
+          rid: 552191782187172246
         _right:
-          rid: 552191782187171951
+          rid: 552191782187172247
         _visibilityData:
           rid: -2
-    - rid: 552191782187171947
+    - rid: 552191782187172243
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -2944,14 +2944,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 8, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171952
+          rid: 552191782187172248
         _right:
-          rid: 552191782187171953
+          rid: 552191782187172249
         _visibilityData:
           rid: -2
-    - rid: 552191782187171948
+    - rid: 552191782187172244
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -2959,14 +2959,14 @@ MonoBehaviour:
           m_Extent: {x: 4, y: 4, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171954
+          rid: 552191782187172250
         _right:
-          rid: 552191782187171955
+          rid: 552191782187172251
         _visibilityData:
           rid: -2
-    - rid: 552191782187171949
+    - rid: 552191782187172245
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -2974,14 +2974,14 @@ MonoBehaviour:
           m_Extent: {x: 4, y: 4, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171956
+          rid: 552191782187172252
         _right:
-          rid: 552191782187171957
+          rid: 552191782187172253
         _visibilityData:
           rid: -2
-    - rid: 552191782187171950
+    - rid: 552191782187172246
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -2989,14 +2989,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171958
+          rid: 552191782187172254
         _right:
-          rid: 552191782187171959
+          rid: 552191782187172255
         _visibilityData:
-          rid: 552191782187171960
-    - rid: 552191782187171951
+          rid: 552191782187172256
+    - rid: 552191782187172247
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3004,14 +3004,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171961
+          rid: 552191782187172257
         _right:
-          rid: 552191782187171962
+          rid: 552191782187172258
         _visibilityData:
           rid: -2
-    - rid: 552191782187171952
+    - rid: 552191782187172248
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3019,14 +3019,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171963
+          rid: 552191782187172259
         _right:
-          rid: 552191782187171964
+          rid: 552191782187172260
         _visibilityData:
-          rid: 552191782187171965
-    - rid: 552191782187171953
+          rid: 552191782187172261
+    - rid: 552191782187172249
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3034,14 +3034,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171966
+          rid: 552191782187172262
         _right:
-          rid: 552191782187171967
+          rid: 552191782187172263
         _visibilityData:
           rid: -2
-    - rid: 552191782187171954
+    - rid: 552191782187172250
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3049,14 +3049,14 @@ MonoBehaviour:
           m_Extent: {x: 4, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171968
+          rid: 552191782187172264
         _right:
-          rid: 552191782187171969
+          rid: 552191782187172265
         _visibilityData:
           rid: -2
-    - rid: 552191782187171955
+    - rid: 552191782187172251
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3064,14 +3064,14 @@ MonoBehaviour:
           m_Extent: {x: 4, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171970
+          rid: 552191782187172266
         _right:
-          rid: 552191782187171971
+          rid: 552191782187172267
         _visibilityData:
           rid: -2
-    - rid: 552191782187171956
+    - rid: 552191782187172252
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3079,14 +3079,14 @@ MonoBehaviour:
           m_Extent: {x: 4, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171972
+          rid: 552191782187172268
         _right:
-          rid: 552191782187171973
+          rid: 552191782187172269
         _visibilityData:
           rid: -2
-    - rid: 552191782187171957
+    - rid: 552191782187172253
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3094,14 +3094,14 @@ MonoBehaviour:
           m_Extent: {x: 4, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171974
+          rid: 552191782187172270
         _right:
-          rid: 552191782187171975
+          rid: 552191782187172271
         _visibilityData:
           rid: -2
-    - rid: 552191782187171958
+    - rid: 552191782187172254
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3109,14 +3109,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171976
+          rid: 552191782187172272
         _right:
-          rid: 552191782187171977
+          rid: 552191782187172273
         _visibilityData:
           rid: -2
-    - rid: 552191782187171959
+    - rid: 552191782187172255
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3124,18 +3124,18 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 8}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171978
+          rid: 552191782187172274
         _right:
-          rid: 552191782187171979
+          rid: 552191782187172275
         _visibilityData:
           rid: -2
-    - rid: 552191782187171960
+    - rid: 552191782187172256
       type: {class: CompactVisibilityData, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _indexes: 000001000200030004000500060007000800
-    - rid: 552191782187171961
+    - rid: 552191782187172257
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3143,14 +3143,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171980
+          rid: 552191782187172276
         _right:
-          rid: 552191782187171981
+          rid: 552191782187172277
         _visibilityData:
           rid: -2
-    - rid: 552191782187171962
+    - rid: 552191782187172258
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3158,14 +3158,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171982
+          rid: 552191782187172278
         _right:
-          rid: 552191782187171983
+          rid: 552191782187172279
         _visibilityData:
           rid: -2
-    - rid: 552191782187171963
+    - rid: 552191782187172259
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3173,14 +3173,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171984
+          rid: 552191782187172280
         _right:
-          rid: 552191782187171985
+          rid: 552191782187172281
         _visibilityData:
           rid: -2
-    - rid: 552191782187171964
+    - rid: 552191782187172260
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3188,18 +3188,18 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171986
+          rid: 552191782187172282
         _right:
-          rid: 552191782187171987
+          rid: 552191782187172283
         _visibilityData:
           rid: -2
-    - rid: 552191782187171965
+    - rid: 552191782187172261
       type: {class: CompactVisibilityData, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _indexes: 000001000200030004000500060007000800
-    - rid: 552191782187171966
+    - rid: 552191782187172262
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3207,14 +3207,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171988
+          rid: 552191782187172284
         _right:
-          rid: 552191782187171989
+          rid: 552191782187172285
         _visibilityData:
           rid: -2
-    - rid: 552191782187171967
+    - rid: 552191782187172263
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3222,14 +3222,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171990
+          rid: 552191782187172286
         _right:
-          rid: 552191782187171991
+          rid: 552191782187172287
         _visibilityData:
           rid: -2
-    - rid: 552191782187171968
+    - rid: 552191782187172264
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3237,14 +3237,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171992
+          rid: 552191782187172288
         _right:
-          rid: 552191782187171993
+          rid: 552191782187172289
         _visibilityData:
-          rid: 552191782187171994
-    - rid: 552191782187171969
+          rid: 552191782187172290
+    - rid: 552191782187172265
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3252,14 +3252,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187171970
+    - rid: 552191782187172266
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3267,14 +3267,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171995
+          rid: 552191782187172291
         _right:
-          rid: 552191782187171996
+          rid: 552191782187172292
         _visibilityData:
-          rid: 552191782187171997
-    - rid: 552191782187171971
+          rid: 552191782187172293
+    - rid: 552191782187172267
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3282,14 +3282,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187171972
+    - rid: 552191782187172268
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3297,14 +3297,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187171998
+          rid: 552191782187172294
         _right:
-          rid: 552191782187171999
+          rid: 552191782187172295
         _visibilityData:
           rid: -2
-    - rid: 552191782187171973
+    - rid: 552191782187172269
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3312,14 +3312,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187171974
+    - rid: 552191782187172270
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3327,14 +3327,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172000
+          rid: 552191782187172296
         _right:
-          rid: 552191782187172001
+          rid: 552191782187172297
         _visibilityData:
           rid: -2
-    - rid: 552191782187171975
+    - rid: 552191782187172271
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3342,14 +3342,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 4, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187171976
+    - rid: 552191782187172272
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3357,14 +3357,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172002
+          rid: 552191782187172298
         _right:
-          rid: 552191782187172003
+          rid: 552191782187172299
         _visibilityData:
           rid: -2
-    - rid: 552191782187171977
+    - rid: 552191782187172273
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3372,14 +3372,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172004
+          rid: 552191782187172300
         _right:
-          rid: 552191782187172005
+          rid: 552191782187172301
         _visibilityData:
           rid: -2
-    - rid: 552191782187171978
+    - rid: 552191782187172274
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3387,14 +3387,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172006
+          rid: 552191782187172302
         _right:
-          rid: 552191782187172007
+          rid: 552191782187172303
         _visibilityData:
           rid: -2
-    - rid: 552191782187171979
+    - rid: 552191782187172275
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3402,14 +3402,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172008
+          rid: 552191782187172304
         _right:
-          rid: 552191782187172009
+          rid: 552191782187172305
         _visibilityData:
           rid: -2
-    - rid: 552191782187171980
+    - rid: 552191782187172276
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3417,14 +3417,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172010
+          rid: 552191782187172306
         _right:
-          rid: 552191782187172011
+          rid: 552191782187172307
         _visibilityData:
-          rid: 552191782187172012
-    - rid: 552191782187171981
+          rid: 552191782187172308
+    - rid: 552191782187172277
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3432,14 +3432,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187171982
+    - rid: 552191782187172278
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3447,14 +3447,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172013
+          rid: 552191782187172309
         _right:
-          rid: 552191782187172014
+          rid: 552191782187172310
         _visibilityData:
-          rid: 552191782187172015
-    - rid: 552191782187171983
+          rid: 552191782187172311
+    - rid: 552191782187172279
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3462,14 +3462,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187171984
+    - rid: 552191782187172280
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3477,14 +3477,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172016
+          rid: 552191782187172312
         _right:
-          rid: 552191782187172017
+          rid: 552191782187172313
         _visibilityData:
           rid: -2
-    - rid: 552191782187171985
+    - rid: 552191782187172281
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3492,14 +3492,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172018
+          rid: 552191782187172314
         _right:
-          rid: 552191782187172019
+          rid: 552191782187172315
         _visibilityData:
           rid: -2
-    - rid: 552191782187171986
+    - rid: 552191782187172282
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3507,14 +3507,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172020
+          rid: 552191782187172316
         _right:
-          rid: 552191782187172021
+          rid: 552191782187172317
         _visibilityData:
           rid: -2
-    - rid: 552191782187171987
+    - rid: 552191782187172283
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3522,14 +3522,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172022
+          rid: 552191782187172318
         _right:
-          rid: 552191782187172023
+          rid: 552191782187172319
         _visibilityData:
           rid: -2
-    - rid: 552191782187171988
+    - rid: 552191782187172284
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3537,14 +3537,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172024
+          rid: 552191782187172320
         _right:
-          rid: 552191782187172025
+          rid: 552191782187172321
         _visibilityData:
-          rid: 552191782187172026
-    - rid: 552191782187171989
+          rid: 552191782187172322
+    - rid: 552191782187172285
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3552,14 +3552,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187171990
+    - rid: 552191782187172286
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3567,14 +3567,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172027
+          rid: 552191782187172323
         _right:
-          rid: 552191782187172028
+          rid: 552191782187172324
         _visibilityData:
-          rid: 552191782187172029
-    - rid: 552191782187171991
+          rid: 552191782187172325
+    - rid: 552191782187172287
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3582,14 +3582,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187171992
+    - rid: 552191782187172288
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3597,14 +3597,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172030
+          rid: 552191782187172326
         _right:
-          rid: 552191782187172031
+          rid: 552191782187172327
         _visibilityData:
           rid: -2
-    - rid: 552191782187171993
+    - rid: 552191782187172289
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3612,18 +3612,18 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172032
+          rid: 552191782187172328
         _right:
-          rid: 552191782187172033
+          rid: 552191782187172329
         _visibilityData:
           rid: -2
-    - rid: 552191782187171994
+    - rid: 552191782187172290
       type: {class: CompactVisibilityData, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _indexes: 000001000200030004000500060007000800
-    - rid: 552191782187171995
+    - rid: 552191782187172291
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3631,14 +3631,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172034
+          rid: 552191782187172330
         _right:
-          rid: 552191782187172035
+          rid: 552191782187172331
         _visibilityData:
           rid: -2
-    - rid: 552191782187171996
+    - rid: 552191782187172292
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3646,18 +3646,18 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172036
+          rid: 552191782187172332
         _right:
-          rid: 552191782187172037
+          rid: 552191782187172333
         _visibilityData:
           rid: -2
-    - rid: 552191782187171997
+    - rid: 552191782187172293
       type: {class: CompactVisibilityData, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _indexes: 000001000200030004000500060007000800
-    - rid: 552191782187171998
+    - rid: 552191782187172294
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3665,14 +3665,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172038
+          rid: 552191782187172334
         _right:
-          rid: 552191782187172039
+          rid: 552191782187172335
         _visibilityData:
-          rid: 552191782187172040
-    - rid: 552191782187171999
+          rid: 552191782187172336
+    - rid: 552191782187172295
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3680,14 +3680,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172000
+    - rid: 552191782187172296
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3695,14 +3695,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
-          rid: 552191782187172041
+          rid: 552191782187172337
         _right:
-          rid: 552191782187172042
+          rid: 552191782187172338
         _visibilityData:
-          rid: 552191782187172043
-    - rid: 552191782187172001
+          rid: 552191782187172339
+    - rid: 552191782187172297
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3710,14 +3710,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 4}
         _isLeaf: 0
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172002
+    - rid: 552191782187172298
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3725,14 +3725,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172003
+    - rid: 552191782187172299
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3740,14 +3740,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172004
+    - rid: 552191782187172300
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3755,14 +3755,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172005
+    - rid: 552191782187172301
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3770,14 +3770,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172006
+    - rid: 552191782187172302
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3785,14 +3785,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172007
+    - rid: 552191782187172303
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3800,14 +3800,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172008
+    - rid: 552191782187172304
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3815,14 +3815,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172009
+    - rid: 552191782187172305
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3830,14 +3830,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172010
+    - rid: 552191782187172306
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3845,14 +3845,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172011
+    - rid: 552191782187172307
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3860,18 +3860,18 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172012
+    - rid: 552191782187172308
       type: {class: CompactVisibilityData, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _indexes: 000001000200030004000500060007000800
-    - rid: 552191782187172013
+    - rid: 552191782187172309
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3879,14 +3879,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172014
+    - rid: 552191782187172310
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3894,18 +3894,18 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172015
+    - rid: 552191782187172311
       type: {class: CompactVisibilityData, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _indexes: 000001000200030004000500060007000800
-    - rid: 552191782187172016
+    - rid: 552191782187172312
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3913,14 +3913,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172017
+    - rid: 552191782187172313
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3928,14 +3928,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172018
+    - rid: 552191782187172314
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3943,14 +3943,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172019
+    - rid: 552191782187172315
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3958,14 +3958,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172020
+    - rid: 552191782187172316
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3973,14 +3973,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172021
+    - rid: 552191782187172317
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -3988,14 +3988,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172022
+    - rid: 552191782187172318
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4003,14 +4003,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172023
+    - rid: 552191782187172319
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4018,14 +4018,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172024
+    - rid: 552191782187172320
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4033,14 +4033,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172025
+    - rid: 552191782187172321
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4048,18 +4048,18 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172026
+    - rid: 552191782187172322
       type: {class: CompactVisibilityData, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _indexes: 000001000200030004000500060007000800
-    - rid: 552191782187172027
+    - rid: 552191782187172323
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4067,14 +4067,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172028
+    - rid: 552191782187172324
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4082,18 +4082,18 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172029
+    - rid: 552191782187172325
       type: {class: CompactVisibilityData, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _indexes: 000001000200030004000500060007000800
-    - rid: 552191782187172030
+    - rid: 552191782187172326
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4101,14 +4101,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172031
+    - rid: 552191782187172327
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4116,14 +4116,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172032
+    - rid: 552191782187172328
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4131,14 +4131,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172033
+    - rid: 552191782187172329
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4146,14 +4146,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172034
+    - rid: 552191782187172330
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4161,14 +4161,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172035
+    - rid: 552191782187172331
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4176,14 +4176,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172036
+    - rid: 552191782187172332
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4191,14 +4191,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172037
+    - rid: 552191782187172333
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4206,14 +4206,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172038
+    - rid: 552191782187172334
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4221,14 +4221,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172039
+    - rid: 552191782187172335
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4236,18 +4236,18 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172040
+    - rid: 552191782187172336
       type: {class: CompactVisibilityData, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _indexes: 000001000200030004000500060007000800
-    - rid: 552191782187172041
+    - rid: 552191782187172337
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4255,14 +4255,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172042
+    - rid: 552191782187172338
       type: {class: VisibilityTreeNode, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _bounds:
@@ -4270,14 +4270,14 @@ MonoBehaviour:
           m_Extent: {x: 2, y: 2, z: 2}
         _isLeaf: 1
         _tree:
-          rid: 552191782187171942
+          rid: 552191782187172238
         _left:
           rid: -2
         _right:
           rid: -2
         _visibilityData:
           rid: -2
-    - rid: 552191782187172043
+    - rid: 552191782187172339
       type: {class: CompactVisibilityData, ns: NGS.AdvancedCullingSystem.Static, asm: AdvancedCullingSystem.Runtime}
       data:
         _indexes: 000001000200030004000500060007000800
@@ -5079,6 +5079,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4457566402915986841, guid: cbdcf58dfb77045269489f9160fd7e8f, type: 3}
   m_PrefabInstance: {fileID: 678808092}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &773781670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11456949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129d3827fc1c9da4fb9550c045601b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Bounds>k__BackingField:
+    m_Center: {x: 1464.4646, y: 73.12193, z: -1289.1255}
+    m_Extent: {x: 44.42458, y: 15.901707, z: 44.424583}
+  <CullingMethod>k__BackingField: 0
+  <IsOccluder>k__BackingField: 1
 --- !u!1001 &807740077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6096,37 +6113,6 @@ Transform:
   - {fileID: 1449662573}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1153702244
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1153702245}
-  m_Layer: 0
-  m_Name: parent1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1153702245
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153702244}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -221.6, y: 100.3, z: -142.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1159613192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7064,7 +7050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1418833778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7655,7 +7641,7 @@ Transform:
   m_GameObject: {fileID: 1544067556}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.51608, z: -0, w: 0.85654044}
-  m_LocalPosition: {x: 313, y: -51, z: 1541}
+  m_LocalPosition: {x: 313, y: -51, z: 1668.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8053,58 +8039,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1635090096
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1635090098}
-  - component: {fileID: 1635090097}
-  m_Layer: 0
-  m_Name: RandomTreeSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1635090097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635090096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 862de9a7575514e159a4b996456a7bed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spawnArea: {x: 60, y: 100}
-  _gameObjectPrefabs:
-  - {fileID: 4704468058474780924, guid: 1b4179f0daf6045619dcb5c4a2a3953c, type: 3}
-  - {fileID: 4831813858293789918, guid: 543789297fd1b4ab6943f47ace169c8f, type: 3}
-  _parent: {fileID: 1153702245}
-  _spawnValue: 10
-  _yAxis: 50
-  _offset: {x: 0, y: 0, z: 0}
---- !u!4 &1635090098
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635090096}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -225.2, y: 69.4, z: -139}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1706689097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9411,23 +9345,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109988979}
   m_CullTransparentMesh: 1
---- !u!114 &2126656771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 11456949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 129d3827fc1c9da4fb9550c045601b1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Bounds>k__BackingField:
-    m_Center: {x: 1464.4646, y: 73.12193, z: -1289.1255}
-    m_Extent: {x: 44.42458, y: 15.901707, z: 44.424583}
-  <CullingMethod>k__BackingField: 0
-  <IsOccluder>k__BackingField: 1
 --- !u!1 &54232955822725497
 GameObject:
   m_ObjectHideFlags: 0
@@ -15937,7 +15854,5 @@ SceneRoots:
   - {fileID: 159045991}
   - {fileID: 1076116513}
   - {fileID: 3209901572117745872}
-  - {fileID: 1635090098}
-  - {fileID: 1153702245}
   - {fileID: 1418833779}
   - {fileID: 448853049}
